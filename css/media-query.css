@@ -1,0 +1,117 @@
+@media (min-width: 1200px){
+:root{
+    --font-size-bggr:5rem;
+    --font-size-bg: 3rem;
+    --font-size-m: 1.85rem;
+    --font-size-nr: 1.15rem;
+    --font-size-sm: 1rem;
+    --font-size-smlr:.83rem;
+    --h1-size: 1.75rem;
+    --h2-size: 1.5rem;
+    --h3-size: 1.25rem;
+    --header-height: 3.5rem;
+}
+
+}
+@media (min-width:600px){
+    .nav-icons{
+        display: flex;
+        flex-wrap: wrap;
+        max-width: 100%;
+    }
+    .form{
+        max-width: 80%;
+    }
+    .inputBox .input{
+        width: 49%;
+    }
+    .footer-content{
+        grid-template-columns: repeat(3, max-content);
+    }
+    .logos-container{
+        grid-template-columns: repeat(2, 1fr);
+        gap: 3rem 2rem;
+    }
+}
+@media (min-width:960px){
+    .header{
+        padding: 1rem 5%;
+    }
+    .about-image{
+        flex: 1 1 43%;
+    }
+    .about-content{
+        flex: 1 1 45%;
+    }
+    .footer-container{
+        grid-template-columns: repeat(2, max-content);
+        justify-content: space-between;
+    }
+    .logos-container{
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+@media (min-width:1250px){
+    .container{
+        margin: 0 auto;
+    }
+    
+}
+
+
+@media (max-width:360px){
+    .menu-box-container{
+        grid-template-columns: repeat(auto-fit, minmax(14.5rem, 1fr));
+        }
+    .dishes .box-container{
+    grid-template-columns: repeat(auto-fit, minmax(13rem, 1fr));
+    }
+    .fast-food .box-container{
+        grid-template-columns: repeat(auto-fit, minmax(13rem, 1fr));
+        }
+    .logos-container{
+    grid-template-columns: repeat(2, 120px);
+    gap: 3rem auto;
+    }
+}
+@media (max-width:920px){
+    .nav-icons #menu-bars{
+        display: inline-block;
+    }
+    .navbar{
+        position: absolute;
+        top: 100%; 
+        left: 0; 
+        right: 0;
+        background: var(--bg-color-100);
+        border-top: .1rem solid rgba(0, 0, 0, .2);
+        border-bottom: .1rem solid rgba(0, 0, 0, .2);
+        padding: 1rem;
+        clip-path: polygon(0 0 ,100% 0, 100% 0, 0 0);
+    }
+    .navbar.active{
+        clip-path: polygon(0 0 ,100% 0, 100% 100%, 0 100%);
+    }
+    .navbar a{
+        display: block;
+        padding: 1rem;
+        font-size: 1rem;
+        margin: 1rem;
+        background: var(--bg-color-900);
+    }
+    #search-box{
+        width: 90%;
+        margin: 0 1rem;
+    }
+}
+
+@media (min-width:2048px){
+    body{
+        zoom: 1.5;
+    }
+  }
+  @media (min-width:3840px){
+      body{
+          zoom: 2;
+      }
+    }
